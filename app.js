@@ -73,6 +73,7 @@ io.on('connection',function(socket){
     socket.broadcast.emit("left-chat", username)
     })
 })
+let PORT= process.env.PORT || 3000;
 http.listen(3000 , function(){
     console.log("app started at port 3000");
 })
